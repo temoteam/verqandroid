@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.azurecom.verq.LoginFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editMail"
+            android:hint="mail"
+            style="@style/Widget.AppCompat.EditText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editPass"
+            android:hint="pass"
+            style="@style/Widget.AppCompat.EditText" />
+
+        <Button
+            android:text="Войти"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLogin"
+            android:gravity="bottom|end"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRegister"
+            android:text="Регистрация"
+            android:gravity="bottom|end"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+    </LinearLayout>
+</FrameLayout>
